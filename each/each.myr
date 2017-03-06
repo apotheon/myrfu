@@ -1,0 +1,13 @@
+use std
+
+const main = {
+	each(["one", "two", "three"], {element
+		std.put("{}\n", element)
+	})
+}
+
+const each = {array, callback
+	for element in array
+		callback(element)
+	;;
+}
