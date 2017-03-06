@@ -1,0 +1,19 @@
+use std
+
+const main = {
+	var x : int64
+
+	x = factorial(10)
+	std.put("factorial {} = {}\n", 10, x)
+}
+
+const factorial = {n
+	var acc
+
+	acc = 1
+	for var i = 1; i < n + 1; i++
+		acc *= i
+	;;
+
+	-> acc
+}
