@@ -29,7 +29,7 @@ seemed so familiar.
 
 ## Roadmap
 
-This isn't so much of a map as a colleciton of a toddler's crayon scribbles on
+This isn't so much of a map as a collection of a toddler's crayon scribbles on
 the living room wall.
 
 * Follow instructional materials on the [Myrddin website][myr]; reformat code
