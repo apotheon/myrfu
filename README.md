@@ -5,6 +5,9 @@ grinding for levels by killing scorpids in Durotar.
 
 I'll just apologize now for that awful analogy.
 
+* [Fossil Repository](https://fossrec.com/u/apotheon/myrfu)
+* [GitHub Mirror](https://github.com/apotheon/myrfu)
+
 ## Myrddin
 
 Myrddin is "Merlin" in the original Welsh, before a French author mangled the
@@ -23,5 +26,21 @@ language, which offers some syntactic elegance that seemed somewhat familiar to
 me.  It was not until someone else mentioned it resembled Standard ML a bit --
 one of my favorite programming languages -- that I realized why its syntax
 seemed so familiar.
+
+## Roadmap
+
+This isn't so much of a map as a colleciton of a toddler's crayon scribbles on
+the living room wall.
+
+* Follow instructional materials on the [Myrddin website][myr]; reformat code
+  samples in my own particular idiom for mental-muscle memory, and run them.
+  This stuff goes in the `myrsite` directory for now.
+
+* Write toy programs of my own devising for exploratory practice.  This stuff
+  goes in the `adhockery` directory for now.
+
+* Maybe write Myrddin versions of programs I've written in other languages for
+  further practice.  I should try to remember to mention where I'll stash that
+  once I have something to stash.
 
 [myr]: http://myrlang.org/
