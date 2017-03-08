@@ -1,0 +1,15 @@
+use std
+
+const main = {
+	var a = 123
+	var fn = {x
+		std.put("inside closure: {}\n", x + a)
+		a++
+	}
+
+	fn(123)
+	fn(0)
+	fn(0)
+
+	std.put("a = {}\n", a)
+}
