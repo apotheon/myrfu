@@ -1,0 +1,15 @@
+use std
+use bio
+
+const main = {
+	var f = bio.mkfile(std.In, bio.Rd)
+	var foo = true
+
+	while true
+		match bio.getc(f)
+		| `bio.Err e: std.fatal("error reading file: {}\n", e)
+		| `bio.Eof: break
+		| `bio.Ok c: std.put("{}", c)
+		;;
+	;;
+}
