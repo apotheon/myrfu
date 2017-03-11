@@ -1,0 +1,32 @@
+use std
+use bio
+
+const main = {
+	var lines = 0, words = 0, chars = 0
+	var inword = false
+	var f = bio.mkfile(std.In, bio.Rd)
+
+	while true
+		match bio.getc(f)
+		| `bio.Err e: std.fatal("error reading file: {}\n", e)
+		| `bio.Eof: break
+		| `bio.Ok ' ': inword = false
+		| `bio.Ok '\t': inword = false
+		| `bio.Ok '\n':
+			lines++
+			inword = false
+		| `bio.Ok c:
+			if !inword
+				words++
+			;;
+
+			inword = true
+		;;
+
+		chars++
+	;;
+
+	std.put("lines: {}\n", lines)
+	std.put("words: {}\n", words)
+	std.put("chars: {}\n", chars)
+}
