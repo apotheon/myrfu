@@ -34,7 +34,8 @@ the living room wall.
 
 * Follow instructional materials on the [Myrddin website][myr]; reformat code
   samples in my own particular idiom for mental-muscle memory, and run them.
-  This stuff goes in the `myrsite` directory for now.
+  This stuff goes in the `myrsite` directory for now.  In addition to the
+  examples on the homepage, see also the [tutorial][myrtut] page.
 
 * Write toy programs of my own devising for exploratory practice.  This stuff
   goes in the `adhockery` directory for now.
@@ -44,3 +45,4 @@ the living room wall.
   once I have something to stash.
 
 [myr]: http://myrlang.org/
+[myrtut]: http://myrlang.org/tutorial
