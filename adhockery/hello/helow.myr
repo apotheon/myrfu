@@ -1,0 +1,27 @@
+use sys
+
+const main = {
+	var fd = sys.open("/dev/stdout", 0)
+
+	for var i = 1; i < 1000000; i++
+		sys.write(1, "hello world\n")
+	;;
+
+	sys.close(fd)
+}
+
+/*
+	hello.myr uses std.put() for text output
+
+	$ mbld -b hello hello.myr && time hello > /dev/null
+	hello...
+		0m01.32s real     0m01.00s user     0m00.33s system
+*/
+
+/*
+	helow.myr uses sys.write() for text output (see code above)
+
+	$ mbld -b helow helow.myr && time helow > /dev/null
+	helow...
+		0m00.16s real     0m00.03s user     0m00.14s system
+*/

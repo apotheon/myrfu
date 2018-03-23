@@ -1,0 +1,7 @@
+use std
+
+const main = {
+	for var i = 1; i < 1000000; i++
+		std.put("hello world\n")
+	;;
+}

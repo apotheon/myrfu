@@ -1,0 +1,34 @@
+$ cat hello.myr
+
+		use std
+
+		const main = {
+			for var i = 1; i < 1000000; i++
+				std.put("hello world\n")
+			;;
+		}
+
+
+$ time ./hello > /dev/null
+    0m01.31s real     0m00.93s user     0m00.37s system
+
+
+
+
+$ cat helow.myr
+
+		use sys
+
+		const main = {
+			var fd = sys.open("/dev/stdout", 0)
+
+			for var i = 1; i < 1000000; i++
+				sys.write(fd, "hello world\n")
+			;;
+
+			sys.close(fd)
+		}
+
+
+$ time ./helow > /dev/null
+    0m00.15s real     0m00.02s user     0m00.14s system
