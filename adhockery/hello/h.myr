@@ -1,0 +1,7 @@
+use sys
+
+const main = {
+	sys.open("/dev/stdout", sys.Owrite)
+	sys.write(fd, "Hello World!\n")
+	sys.close(fd)
+}
